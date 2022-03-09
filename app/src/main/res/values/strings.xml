@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Folha Pagamento</string>
+    <string name="salario_bruto">Salário Bruto:</string>
+    <string name="num_dependentes">Número de Dependentes:</string>
+    <string name="tipo_plano">Plano de Saúde:</string>
+    <string name="vt">Vale Transporte:</string>
+    <string name="va">Vale Alimentação:</string>
+    <string name="vr">Vale Refeição:</string>
+    <string name="irrf">Imposto de Renda</string>
+    <string name="calcular">Calcular</string>
+    <string name="limpar">Limpar</string>
+    <string name="sim">Sim</string>
+    <string name="nao">Não</string>
+    <string name="calculo">Inss</string>
+    <string name="desconto">Ver Descontos</string>
+    <string name="salario_liquido">Salário Liquido</string>
+    <string name="nome">Nome:</string>
+    <string name="text_sl">O Salário Liquído é: </string>
+    <string name="text_ps">Desconto do Plano de Saúde é: </string>
+    <string name="text_vt">Desconto do VT é: </string>
+    <string name="text_vr">Desconto do VR é: </string>
+    <string name="text_va">Desconto do VA é: </string>
+    <string name="text_inss">Desconto do INSS é: </string>
+    <string name="text_irrf">Desconto do Imposto de Renda é: </string>
+    <string name="imprimir">Imprimir</string>
+    <string-array name="plano_saude">
+        <item>Selecione...</item>
+        <item>1 - Standard</item>
+        <item>2 - Básico</item>
+        <item>3 - Super</item>
+        <item>4 - Master</item>
+    </string-array>
+
+</resources>

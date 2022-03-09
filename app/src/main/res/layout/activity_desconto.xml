@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DescontoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            style="@style/estilo_textview"
+            android:id="@+id/nome1"
+            android:text="@string/nome"
+            />
+
+        <TextView
+            android:id="@+id/sl"
+            style="@style/estilo_textview"
+            android:text="@string/text_sl"
+            />
+
+    <TextView
+        android:id="@+id/ps"
+        style="@style/estilo_textview"
+        android:text="@string/text_ps"
+        />
+
+    <TextView
+        android:id="@+id/vt"
+        style="@style/estilo_textview"
+        android:text="@string/text_vt"
+        />
+
+    <TextView
+        android:id="@+id/vr"
+        style="@style/estilo_textview"
+        android:text="@string/text_vr"
+        />
+
+        <TextView
+            android:id="@+id/va"
+            style="@style/estilo_textview"
+            android:text="@string/text_va"
+            />
+        <TextView
+            android:id="@+id/inss"
+            style="@style/estilo_textview"
+            android:text="@string/text_inss"
+            />
+        <TextView
+            android:id="@+id/irrf"
+            style="@style/estilo_textview"
+            android:text="@string/text_irrf"
+            />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/imprimir"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

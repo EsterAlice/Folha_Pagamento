@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <TextView
+        style="@style/estilo_textview"
+        android:text="@string/nome"
+        />
+    <EditText
+        android:id="@+id/nome"
+        style="@style/estilo_edit2"
+        />
+
+    <TextView
+        style="@style/estilo_textview"
+        android:text="@string/salario_bruto"
+        />
+    <EditText
+        android:id="@+id/edit_bruto"
+        style="@style/estilo_edit"
+        />
+    <TextView
+        style="@style/estilo_textview"
+        android:text="@string/num_dependentes"
+        />
+    <EditText
+        android:id="@+id/edit_dependentes"
+        style="@style/estilo_edit"
+        />
+    <TextView
+        style="@style/estilo_textview"
+        android:text="@string/tipo_plano"
+        />
+    <Spinner
+        android:id="@+id/spinner_plano"
+        style="@style/estilo_edit"
+        android:entries="@array/plano_saude"
+        />
+    <TextView
+        style="@style/estilo_textview"
+        android:text="@string/vt"
+        />
+    <RadioGroup
+        android:id="@+id/edit_vt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+        android:id="@+id/radio_sim_vt"
+        style="@style/estilo_edit"
+        android:text="@string/sim"
+        />
+        <RadioButton
+            android:id="@+id/radio_nao_vt"
+            style="@style/estilo_edit"
+            android:text="@string/nao"
+            />
+
+</RadioGroup>
+    <TextView
+        style="@style/estilo_textview"
+        android:text="@string/va"
+        />
+    <RadioGroup
+        android:id="@+id/edit_va1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/radio_sim_va"
+            style="@style/estilo_edit"
+            android:text="@string/sim"
+            />
+        <RadioButton
+            android:id="@+id/radio_nao_va"
+            style="@style/estilo_edit"
+            android:text="@string/nao"
+            />
+
+    </RadioGroup>
+    <TextView
+        style="@style/estilo_textview"
+        android:text="@string/vr"
+        />
+    <RadioGroup
+        android:id="@+id/edit_vr1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/radio_sim_vr"
+            style="@style/estilo_edit"
+            android:text="@string/sim"
+            />
+        <RadioButton
+            android:id="@+id/radio_nao_vr"
+            style="@style/estilo_edit"
+            android:text="@string/nao"
+            />
+
+    </RadioGroup>
+
+    <LinearLayout
+        style="@style/estilo_app"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_calcular"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/calcular" />
+
+        <Button
+            android:id="@+id/bt_limpar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="@string/limpar" />
+
+    </LinearLayout>
+    <TextView
+        android:textAlignment="center"
+        android:text="@string/salario_liquido"
+        style="@style/estilo_textview"
+        android:id="@+id/salarioLiquido"/>
+    <TextView
+        android:textAlignment="center"
+        android:text="@string/calculo"
+        style="@style/estilo_textview"
+        android:id="@+id/calculoInss"/>
+
+
+
+        <Button
+          android:visibility="invisible"
+            android:id="@+id/bt_desconto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/desconto" />
+
+
+    </LinearLayout>
+</ScrollView>
